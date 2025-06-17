@@ -60,7 +60,7 @@
               </ul>
               <div class="nav-btn">
                 <a href="" class="src-ic"
-                  ><img src="./Assets/Magnifier.png" alt="Search"
+                  ><img src="./assets/Magnifier.png" alt="Search"
                 /></a>
                 <a href="" class="primary-btn">iSERVICE</a>
               </div>
@@ -416,10 +416,10 @@
             <p>Patch</p>
 
             <div class="social-icons">
-              <img src="./assets/instagram.png" alt="Instagram" />
-              <img src="./assets/linkedin.png" alt="LinkedIn" />
-              <img src="./assets/Vector.png" alt="Twitter" />
-              <img src="./assets/youtube.png" alt="YouTube" />
+              <img src="./assets/instagram (1).png" alt="Instagram" />
+              <img src="./assets/linkedin (1).png" alt="LinkedIn" />
+              <img src="./assets/facebook.png" alt="Twitter" />
+              <img src="./assets/youtube (1).png" alt="YouTube" />
             </div>
           </div>
 
@@ -456,10 +456,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
+    
     </script>
 
     <!-- Splide Core JS -->
@@ -467,53 +464,8 @@
     <!-- Splide AutoScroll Extension -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.1/dist/js/splide-extension-auto-scroll.min.js"></script>
 
-    <!-- Splide Init -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // AOS Initialization
-        AOS.init({
-          duration: 800,
-          once: true,
-        });
 
-        // Navbar toggler
-        const toggler = document.querySelector(".nav-toggler");
-        const menu = document.querySelector(".nav-collapse");
-
-        if (toggler && menu) {
-          toggler.addEventListener("click", function () {
-            toggler.classList.toggle("active");
-            menu.classList.toggle("active");
-          });
-        }
-
-        // Splide Auto Scroll Slider
-        new Splide(".myAutoScrollSlider", {
-          type: "loop",
-          perPage: 3,
-          focus: "center",
-          arrows: false,
-          pagination: false,
-          gap: "10px",
-          drag: false,
-          autoScroll: {
-            speed: 2,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-          },
-          breakpoints: {
-            1024: {
-              perPage: 3,
-            },
-            768: {
-              perPage: 2,
-            },
-            480: {
-              perPage: 1,
-            },
-          },
-        }).mount(window.splide.Extensions);
-      });
-    </script>
+  
+    <script src="./js/index.js"></script>
   </body>
 </html>
